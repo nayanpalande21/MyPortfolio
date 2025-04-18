@@ -1,0 +1,229 @@
+/* General Styles */
+
+body {
+    background: url('bg5.jpg') no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    backdrop-filter: blur(5px);
+}
+
+/* Transparent Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px); /* Glass effect */
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #03A9F4;
+}
+
+/* Navigation */
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration:through;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    color: #03A9F4;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+   background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+/* About Section */
+#about p {
+    
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+/* Skills Section */
+#skills {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Increased space between skills */
+    padding: 40px 20px; /* More padding for better layout */
+}
+
+/* Individual Skill Item */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+/* Skill Icon */
+.skill-item i {
+    font-size: 50px;
+    color: #03A9F4;
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Skill Label */
+.skill-item span {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Hover Effects */
+.skill-item:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.skill-item i:hover {
+    color: #0288d1;
+}
+
+
+/* Projects Section */
+.project {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #03A9F4;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(3, 169, 244, 0.3);
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#contact input {
+    width: 300px;
+    padding: 12px;
+    margin-top: 10px;
+    border: 2px solid #03A9F4;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 16px;
+}
+
+#contact a{
+    color: white;
+}
+
+#contact button {
+    width: 160px;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    background-color: #03A9F4;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#contact button:hover {
+    background-color: #0288d1;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #contact input {
+      width: 90%;
+    }
+}
